@@ -21,6 +21,7 @@ api/public/assets
 api.byebug_history
 
 # Ignore master key for decrypting credentials and more./api/config/master.key
+api/config/master.key
 
 api/public/packs
 api/public/packs-test
