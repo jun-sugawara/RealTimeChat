@@ -8,26 +8,17 @@
 api/.bundle
 
 # Ignore all logfiles and tempfiles.
-api/log/*
-api/tmp/*
+api/log/
+api/tmp/
 !api/log/.keep
 !api/tmp/.keep
 
 # Ignore uploaded files in development.
-api/storage/*
+api/storage/
 !api/storage/.keep
-
-api/public/assets
-api.byebug_history
 
 # Ignore master key for decrypting credentials and more./api/config/master.key
 api/config/master.key
 
-api/public/packs
-api/public/packs-test
-api/node_modules
-api/yarn-error.log
-apiyarn-debug.log*
-api.yarn-integrity
-api.Ds_Store
+
 
