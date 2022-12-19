@@ -20,5 +20,6 @@ api/storage/
 # Ignore master key for decrypting credentials and more./api/config/master.key
 api/config/master.key
 
-
+# Ignore secret key dir devise
+api/config/initializers/
 
