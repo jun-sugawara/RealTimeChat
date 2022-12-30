@@ -23,3 +23,7 @@ api/config/master.key
 # Ignore secret key dir devise
 api/config/initializers/
 
+Ignore node 
+.node-version
+app-front/.node-version
+
