@@ -1,4 +1,6 @@
 class MessagesController < ApplicationController
+  before_action :authenticate_user!, only: ["index"]
+
   def index
     messages = Message.all
     messages_array = messages.map do |m|
@@ -14,4 +16,5 @@ class MessagesController < ApplicationController
 
     render json: messages_array, status: 200
   end
+
 end
