@@ -11,7 +11,7 @@
 
 <script>
 import axios from 'axios'
-import removeItem from './removeItem'
+import removeItem from '../auth/removeItem'
 export default {
   data () {
     return {
