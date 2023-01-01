@@ -25,20 +25,22 @@ export default {
     async login() {
       try {
         this.error = null
-
+        
         const res = await axios.post('http://localhost:3000/auth/sign_in', {
           email: this.email,
           password: this.password,
           }
-        )
+          )
         if (!res) {
           throw new Error('メールアドレスかパスワードが違います')
         }
         if (!this.error) {
+          window.localStorage.setItem('access-token', res.headers['access-token'])
+          window.localStorage.setItem('client', res.headers.client)
+          window.localStorage.setItem('uid', res.headers.uid)
+          window.localStorage.setItem('name', res.data.data.name)
           this.$emit('redirectToChatRoom')
         }
-
-        console.log({ res })
 
         return res
       } catch (error) {
